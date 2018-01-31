@@ -1,6 +1,8 @@
 package gcy.myandroidtools.common.util;
 
 
+import gcy.myandroidtools.common.BaseApp;
+
 public final class DensityUtil {
 
     private static float density = -1F;

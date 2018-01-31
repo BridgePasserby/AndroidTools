@@ -1,4 +1,4 @@
-package gcy.myandroidtools.common.util;
+package gcy.myandroidtools.common;
 
 /**
  * Copyright (c) 2018, 北京视达科科技有限责任公司 All rights reserved.

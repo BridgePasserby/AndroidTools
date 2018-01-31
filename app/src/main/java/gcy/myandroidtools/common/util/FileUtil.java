@@ -8,6 +8,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
+import gcy.myandroidtools.common.BaseApp;
+
 public final class FileUtil {
 
     private FileUtil() {
