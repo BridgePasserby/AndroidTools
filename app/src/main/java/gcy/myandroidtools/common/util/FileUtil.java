@@ -1,5 +1,8 @@
 package gcy.myandroidtools.common.util;
 
+import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.Environment;
 import android.os.StatFs;
 
@@ -116,4 +119,31 @@ public final class FileUtil {
         }
         return result;
     }
+
+    public static File getDiskCacheDir(Context context, String pathName) {
+        String cachePath;
+        if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())
+                || !Environment.isExternalStorageRemovable()) {
+            cachePath = context.getExternalCacheDir().getPath();
+        } else {
+            cachePath = context.getCacheDir().getPath();
+        }
+        return new File(cachePath + File.separator + pathName);
+    }
+
+    /**
+     * @return AndroidManifest_versionCode versionCode
+     */
+    public static int getAppVersion(Context context) {
+        try {
+            PackageInfo info = context.getPackageManager().getPackageInfo(context.getPackageName
+                    (), 0);
+            return info.versionCode;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        return 1;
+    }
+
+
 }
