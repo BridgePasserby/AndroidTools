@@ -2,15 +2,27 @@
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:background="@color/colorAccent"
-        tools:context="gcy.androidtools.gcy.myandroidtools.MainActivity">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-            android:layout_width="40dp"
-            android:layout_height="80dp"
-            android:text="Hello World!"
-            android:layout_weight="0.5"/>
+    <!--<TextView-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:text="Hello World!"-->
+            <!--android:layout_weight="0.5"/>-->
 
+    <Button
+            android:id="@+id/click"
+            android:onClick="click"
+            android:text="点击"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    
+    <ImageView
+            android:id="@+id/iv"
+            android:layout_width="200dp"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/f1"
+            />
 </LinearLayout>
