@@ -4,7 +4,10 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 /**
- * Created by Administrator on 2017/8/24 0024.
+ * Copyright (c) 2018, 北京视达科科技有限责任公司 All rights reserved.
+ * author：chongyang.gao
+ * date：2018/10/16
+ * description：
  */
 
 public class SharePreferenceUtil {

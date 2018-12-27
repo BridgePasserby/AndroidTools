@@ -2,7 +2,12 @@ package gcy.androidtools.common.util;
 
 
 import gcy.androidtools.common.BaseApp;
-
+/**
+ * Copyright (c) 2018, 北京视达科科技有限责任公司 All rights reserved.
+ * author：chongyang.gao
+ * date：2018/10/16
+ * description：
+ */
 public final class DensityUtil {
 
     private static float density = -1F;
